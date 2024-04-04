@@ -201,6 +201,12 @@ const handleNewUser = () => {
           </div>
         </div>
       )}
+      <footer className="mt-5 position-fixed bottom-0">
+  <p>© 2024 <a className="text-decoration-none" href="https://github.com/sedadiriker/Random-User-with-React" target="_blank">
+  <span className="text text-uppercase text-success fw-bold fs-5  p-2 rounded-4 shadow">Seda Diriker</span>
+  </a> </p>
+  
+</footer>
     </div>
   );
 }
