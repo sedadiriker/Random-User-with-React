@@ -7,5 +7,132 @@
 .App{
     width: 100vw;
     min-height: 100vh;
-    background-color: burlywood;
+    background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #d9d2af 0%, #97D9E1 100%);
+
+}
+.title{
+    color: rgb(122, 65, 65);
+}
+/* Accordion Header */
+.custom-accordion-header .accordion-button:not(.collapsed) {
+    background-color: rgb(16, 97, 99) !important;
+    color: white !important;
+}
+.custom-accordion-header .accordion-button {
+    background-color: rgb(121, 150, 150) !important;  
+      color: black !important;
+}
+.person-card{
+    background-color: rgb(241, 234, 225);
+}
+.person-image{
+    background-color: rgb(80, 101, 94);
+    box-shadow: 2px 3px 20px black;
+    width: 40%;
+}
+.accordion-info{
+    box-shadow: 2px 3px 20px rgb(135, 131, 131);
+
+}
+.new-user{
+    background-color: #50645D;
+    color: white;
+    &:hover{
+        background-color: #778983;
+        color: black;
+    }
+}
+.added-users{
+    width: 98%;
+    margin: auto;
+}
+.add-user{
+    background-color: #956304;
+    color: white;
+    &:hover{
+        background-color: #baa57f;
+        color: black;
+    }
+}
+.added-user-card{
+    h4{
+        background-color: #8a8170;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+.user-info{
+    border: 1px solid rgba(0, 0, 0, 0.268);
+    
+}
+.delete{
+    position: absolute;
+    right: 0;
+    color: brown;
+}
+
+
+
+@media screen and (max-width:950px) {
+    .person-card{
+        width: 90% !important;
+    }
+    .user-info{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:780px) {
+    .person-card{
+        width: 95% !important;
+    }
+    .user-info{
+        font-size: 10px;
+    }
+    .added-user-card{
+        h4{
+            font-size: 1rem;
+        }
+    }
+
+    .accordion-info{
+        font-size: 12px !important;
+    }
+  
+}
+@media screen and (max-width:580px) {
+ .person-card{
+    flex-direction: column ;
+    row-gap: 1rem;
+ }
+ .user-info{
+    font-size: 8px;
+}
+.added-user-card{
+    h4{
+        font-size: 14px;
+    }
+}
+ .accordion-info {
+    width: 80% !important;
+ }
+ .delete{
+    font-size: 12px;
+ }
+  
+}
+@media screen and (max-width:480px) {
+ 
+ .user-info{
+    font-size: 7px;
+}
+.added-user-card{
+    h4{
+        font-size: 14px;
+    }
+}
+.delete{
+    font-size: 9px;
+ }
+  
 }
